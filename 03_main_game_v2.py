@@ -179,13 +179,11 @@ while attempt != 7:
         if letter == guess:
             display[position] = letter
             print(display)
-        if letter != guess:
-            unused_letter.append(letter)
-            print(f"Not used letter: {unused_letter}")
+        
 
     if guess not in chosen_word:
          unused_letter.append(guess)
-            print(f"Not used letter: {unused_letter}")
+         print(f"Not used letter: {unused_letter}")
         attempt += 1
         print(display)
         
