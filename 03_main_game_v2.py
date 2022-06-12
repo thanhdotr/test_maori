@@ -184,8 +184,11 @@ while attempt != 7:
             print(f"Not used letter: {unused_letter}")
 
     if guess not in chosen_word:
+         unused_letter.append(guess)
+            print(f"Not used letter: {unused_letter}")
         attempt += 1
         print(display)
+        
 
     if "_" not in display:
         end_of_game = True
